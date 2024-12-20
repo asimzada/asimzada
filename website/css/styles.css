@@ -1,68 +1,145 @@
-/* Global Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fonts and Colors */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
     color: #333;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     text-align: center;
-}
-
-header .navbar a {
     color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 100px 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.header h1 {
+    font-size: 3rem;
 }
 
-/* Main Content */
-.hero {
-    background: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
+.header p {
+    font-size: 1.2rem;
+    margin: 20px 0;
 }
 
-.about, .contact {
-    padding: 40px;
-    text-align: center;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-form button {
+.header .btn {
+    background: white;
+    color: #4facfe;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+.header .btn:hover {
+    background: #00f2fe;
     color: white;
-    border: none;
-    cursor: pointer;
 }
 
-form button:hover {
-    background-color: #45a049;
+/* Navigation */
+.navbar {
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
 }
 
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #4facfe;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.about-section .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #4facfe;
+}
+
+/* Services Section */
+.services {
+    background: #f5f7fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #4facfe;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
