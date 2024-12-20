@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Asim Zada | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
