@@ -4,24 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Asim Zada's Website</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Asim Zada's Website</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to Asim Zada's World</h1>
+            <p>Innovate, Inspire, and Transform</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
     </header>
-    
-    <section>
-        <h2>Introduction</h2>
-        <p>This is a custom website that I've created and hosted using GitHub Pages.</p>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="html/about.html">About</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my professional corner. I specialize in creative solutions, innovative designs, and impactful strategies that drive success.</p>
+            <img src="images/profile.jpg" alt="Asim Zada" class="profile-pic">
+        </div>
     </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>Modern and responsive web designs tailored to your needs.</p>
+                </div>
+                <div class="card">
+                    <h3>Creative Design</h3>
+                    <p>Stunning visuals and designs that captivate your audience.</p>
+                </div>
+                <div class="card">
+                    <h3>Consultation</h3>
+                    <p>Expert advice to turn your ideas into reality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Asim Zada. Designed with ❤️ for innovation.</p>
+    </footer>
 </body>
 </html>
-<link rel="stylesheet" href="css/styles.css">
