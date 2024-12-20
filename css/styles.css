@@ -1,0 +1,289 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* 1. Responsive Design */
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 13px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Fluid Layouts and Flexible Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 2. Cross-Browser Compatibility */
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* 3. Modern Layouts (CSS Grid and Flexbox) */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 4. Animations and Transitions */
+button, .card {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* 5. Typography */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* 6. Color and Theming */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #28a745;
+    --accent-color: #ff5733;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* 7. User Interaction */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:focus, button:hover {
+    background-color: var(--secondary-color);
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* 8. Layout and Spacing */
+.section {
+    padding: 50px;
+    margin: 20px 0;
+}
+
+.section .container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 9. Accessibility */
+button:focus, input:focus {
+    outline: 3px solid var(--secondary-color);
+}
+
+/* 10. Modular and Maintainable Code */
+.header, .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 11. Images and Icons */
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* 12. CSS Flexibility and Reusability */
+.text-center {
+    text-align: center;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.pt-5 {
+    padding-top: 2rem;
+}
+
+/* 13. Performance Optimization */
+body {
+    font-size: 16px;
+}
+
+/* 14. Responsive Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* 15. Footer Design */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ccc;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* 16. Custom Properties */
+.custom-font {
+    font-family: 'Courier New', monospace;
+}
+
+/* 17. CSS Framework Integration */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 18. Shadow Effects and Depth */
+.card {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 19. State Management */
+button:active {
+    transform: scale(0.98);
+}
+
+/* 20. Fallbacks and Compatibility */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+

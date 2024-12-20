@@ -1,13 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Asim Zada's Website</title>
+    <meta name="description" content="Asim Zada's personal website featuring social media links, original poetry, contact information, and more.">
+    <meta property="og:title" content="Asim Zada - Personal Website">
+    <meta property="og:description" content="A personal website for Asim Zada featuring his work, social media profiles, contact information, and creative poetry.">
+    <meta property="og:image" content="your-image-link.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <link rel="sitemap" href="sitemap.xml">
+    <title>Asim Zada - Personal Website</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Preloading for Performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- External JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+    <!-- Inline CSS for Mobile Optimization -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        #hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+        }
+        #about, #poetry, #contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+        button {
+            background-color: #555;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background-color: #777;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first website hosted with GitHub Pages!</p>
+
+    <header>
+        <div class="logo">
+            <h1>Asim Zada</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#poetry">Poetry</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.instagram.com/asim_zada/?fbclid=IwZXh0bgNhZW0CMTAAAR1IYiuYIpacFgVEMiKbtq7UWIGdrGTedJ-vOebXyGC7hSBAduL9FG7HMEE_aem_wds23kOQ6_VptLlCBzLNgw" target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="https://www.tiktok.com/@asim.zada?fbclid=IwZXh0bgNhZW0CMTAAAR3bNgJP7jutW3I8hqNxH_oxPLNkba87vtgIw_b16oSaJ8LCnkgTmMHbeSo_aem_R4j77xKozfxGf0LDOewuhQ" target="_blank" aria-label="TikTok">TikTok</a>
+            <a href="https://web.facebook.com/profile.php?id=100080719734501" target="_blank" aria-label="Facebook">Facebook</a>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h2>Welcome to My Personal Space!</h2>
+        <p>Your one-stop destination for all my work, contact details, and creative expressions.</p>
+        <button><a href="#contact" style="color: white;">Get in Touch</a></button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Asim Zada, a passionate learner of the Quran and Islamic history. I am also an avid explorer of different cultures and languages.</p>
+        <p>Feel free to explore my work and connect with me through social media or the contact form below.</p>
+    </section>
+
+    <section id="poetry">
+        <h2>My Original Poetry</h2>
+        <p><em>"تمہیں محبت سِکھاتا ہوں ، یہاں بیٹھو♥️👀✨"</em></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through any of the following:</p>
+        <ul>
+            <li>Email: <a href="mailto:legend786g@gmail.com">legend786g@gmail.com</a></li>
+            <li>Phone: <a href="tel:+923415949245">03415949245</a></li>
+        </ul>
+        <form action="#" method="POST" id="contact-form" aria-labelledby="contact-form-title">
+            <h3 id="contact-form-title">Contact Form</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Asim Zada. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent successfully!');
+        });
+    </script>
 </body>
 </html>
-
